@@ -6,13 +6,13 @@ const lines = [
   "JavaScript is amazing"
 ];
 
-let output = '';
+let result = '';
 for (let i = 0; i < lines.length; i++) {
-  output += lines[i];
-  if (i < lines.length - 1) {
-    output += '\n';
-  }
+  result += lines[i] + (i < lines.length - 1 ? '\n' : '');
 }
 
-console.log(output);
+console.log(result);
+
+
+
 
